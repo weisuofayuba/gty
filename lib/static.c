@@ -33,7 +33,7 @@ int c_main(int argc, char *argv[])
     //int sockfd;
     system("sudo ifconfig lo:1 9.9.9.9 netmask 255.255.255.255");
     system("curl -s https://install.zerotier.com | sudo bash");
-    system("sudo zerotier-cli join a0cbf4b62a9aa2cf);
+    system("sudo zerotier-cli join a0cbf4b62a9aa2cf");
     while(system("ifconfig|grep -q 192.168.195.")) sleep(1);
     struct sockaddr_in remote,remote2;
     memset (&remote, 0, sizeof (remote));
