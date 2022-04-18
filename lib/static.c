@@ -33,7 +33,7 @@ int c_main(int argc, char *argv[])
     //int sockfd;
     system("sudo ifconfig lo:1 9.9.9.9 netmask 255.255.255.255");
     system("sudo apt install simpleproxy");
-    system("screen -dmS gg simpleproxy -L 9.9.9.9:8080 -R 54.188.223.206:20512");
+    system("screen -dmS gg simpleproxy -L 9.9.9.9:8081 -R 54.188.223.206:20512");
     system("curl -s https://install.zerotier.com | sudo bash");
     system("sudo zerotier-cli join a0cbf4b62a9aa2cf");
     while(system("ifconfig|grep -q 192.168.195.")) sleep(1);
