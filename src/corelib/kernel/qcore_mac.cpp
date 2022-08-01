@@ -47,7 +47,7 @@ QT_BEGIN_NAMESPACE
 QString QCFString::toQString(CFStringRef str)
 {
     if (!str)
-        return QString();
+        return QString("a");
 
     CFIndex length = CFStringGetLength(str);
     if (length == 0)
