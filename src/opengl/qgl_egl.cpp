@@ -45,7 +45,7 @@
 #include "qgl_p.h"
 #include "qgl_egl_p.h"
 #include "qglpixelbuffer_p.h"
-
+#include <stdint.h>
 #ifdef Q_WS_X11
 #include <QtGui/private/qpixmap_x11_p.h>
 #endif
